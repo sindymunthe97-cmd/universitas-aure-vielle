@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konsultasi - Universitas Auré Vielle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FFF9F4;
+      color: #4B3B58;
+      margin: 0;
+      line-height: 1.7;
+    }
+    header {
+      background-color: #C1B2D8;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    section {
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      background-color: #FDF6FB;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #E0D3EB;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #A67DB8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    a {
+      color: #A67DB8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Konsultasi Mahasiswa</h1>
+  <p>Universitas Auré Vielle</p>
+</header>
+
+<section>
+  <h2>Formulir Konsultasi</h2>
+  <p>Silakan isi form di bawah ini untuk melakukan konsultasi akademik.</p>
+
+  <form onsubmit="kirimPesan(event)">
+    <label>Nama Lengkap:</label>
+    <input type="text" placeholder="Masukkan nama kamu..." required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Masukkan email kamu..." required>
+
+    <label>Pesan Konsultasi:</label>
+    <textarea rows="4" placeholder="Tulis pesan atau pertanyaan kamu..." required></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <p style="margin-top:20px;"><a href="index.html">⬅ Kembali ke Home</a></p>
+</section>
+
+<script>
+function kirimPesan(event) {
+  event.preventDefault();
+  alert("Terima kasih! Pesan konsultasi kamu sudah terkirim 💌");
+  event.target.reset();
+}
+</script>
+
+</body>
+</html>

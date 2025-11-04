@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<hmtl lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title>Katalog Komputer Sejahtera</title>
+        <link rel="stylesheet" href="/css/style4.css">
+    </head>
+
+    <style>
+        /* Katalog Produk */
+        .catalog-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 5px 0;
+        }
+    </style>
+
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #e7dede;
+        }
+
+        .header {
+            background-color: rgb(48, 12, 252);
+            color: rgb(240, 235, 235);
+            padding: 8px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            background-color: #125d8a;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            top: 0px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #3ce608;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f00707;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            padding-top: 20px;
+        }
+
+        .content {
+            flex: 3;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(244, 11, 11, 0.2);
+        }
+
+        /* Tombol Detail */
+        .btn-detail {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn-detail:hover {
+            background-color: #005f7f;
+        }
+
+        footer {
+            background-color: #237dad;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
+    <div class="header">
+        <h1>Toko Komputer Sejahtera</h1>
+        <p>Toko Komputer Terlaris</p>
+    </div>
+
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Produk</a>
+        <a href="#">Promo</a>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Kategori Produk</h3>
+            <ul>
+                <li><a href="#mouse">Mouse</a></li>
+                <li><a href="#monitor">Monitor</a></li>
+                <li><a href="#keyboard">Keyboard</a></li>
+                <li><a href="#casing">Casing</a></li>
+                <li><a href="#memori">Memori</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Tentang Kami</h2>
+            <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Labore similique quis accusamus excepturi quisquam n:</p>
+            <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Labore similique quis accusamus excepturi quisquam n:</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h3>Kategori Produk</h3>
+            <div class="catalog-container">
+
+                <div class="product-card">
+                    <img src="/asset/mouse2.jpeg" alt="produk 1">
+                    <h3>Mouse</h3>
+                    <a href="#mouse" class="btn-detail">Detail</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="/asset/monitor1.jpeg" alt="produk 2">
+                    <h3>Monitor</h3>
+                    <a href="#monitor" class="btn-detail">Detail</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="/asset/keyboard1.jpeg" alt="produk 3">
+                    <h3>Keyboard</h3>
+                    <a href="#keyboard" class="btn-detail">Detail</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="/asset/casing1.jpeg" alt="produk 4">
+                    <h3>Casing</h3>
+                    <a href="#casing" class="btn-detail">Detail</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="/asset/memori1.jpeg" alt="produk 5">
+                    <h3>Memori</h3>
+                    <a href="#memori" class="btn-detail">Detail</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="/asset/accesories1.jpeg" alt="produk 6">
+                    <h3>Accessories</h3>
+                    <a href="#accessories" class="btn-detail">Detail</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="mouse">
+        <div class="container">
+            <div class="containet">
+                <h2>Jenis Mouse</h2>
+                <div class="catalog-container">
+                    <div class="product-card">
+                        <img src="/asset/mousea.jpeg" alt="produk 1">
+                        <h3>Harga : Rp.120.000</h3>
+                        <button>Beli</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/asset/mouseb.jpeg" alt="produk 2">
+                        <h3>Harga : Rp.170.000</h3>
+                        <button>Beli</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/asset/mousec.jpeg" alt="produk 3">
+                        <h3>Harga : Rp.200.000</h3>
+                        <button>Beli</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/asset/moused.jpeg" alt="produk 4">
+                        <h3>Harga : Rp.220.000</h3>
+                        <button>Beli</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/asset/mousee.jpeg" alt="produk 5">
+                        <h3>Harga : Rp.300.000</h3>
+                        <button>Beli</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="/asset/mousef.jpeg" alt="produk 6">
+                        <h3>Harga : Rp.150.000</h3>
+                        <button>Beli</button>
+                    </div>
+                </div>
+                <a href="#top">Kembali ke atas</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Toko Komputer Sejahtera. Semua Hak Dilindungi.
+    </footer>
+
+</body>
+</hmtl>
